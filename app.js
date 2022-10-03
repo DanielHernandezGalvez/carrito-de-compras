@@ -38,6 +38,7 @@ const pintarCards = data => {
     data.forEach(producto => {
     //    console.log(data)
         templateCard.querySelector('h5').textContent = producto.title     
+        templateCard.querySelector('del').textContent = producto.antes   
         templateCard.querySelector('p').textContent = producto.precio   
         templateCard.querySelector('img').setAttribute("src", producto.thumbnailUrl)
         templateCard.querySelector('.btn-dark').dataset.id = producto.id
