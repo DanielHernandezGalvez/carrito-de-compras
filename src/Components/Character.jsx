@@ -25,7 +25,7 @@ text-align: center;
 margin: 10px;
  
 &:hover {
-    filter(brightness(40%));
+    filter: brightness(40%);
 }
 `;
 const Title = styled.h2`
