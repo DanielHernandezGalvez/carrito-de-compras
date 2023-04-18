@@ -1,8 +1,12 @@
 import styled from "styled-components";
 import Simpsons from "../img/simpsons.png";
+import React from 'react';
 
-const Welcome = (props) => {
-  const { reqApi } = props;
+interface WelcomeProps {
+reqApi: () => void;
+}
+
+const Welcome = ({ reqApi }: WelcomeProps) => {
   return (
     <ContentLogo>
       <WelcomeText>Para buscar frases, has click en la imagen</WelcomeText>
