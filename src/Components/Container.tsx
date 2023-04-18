@@ -1,8 +1,12 @@
 import styled from "styled-components";
+import React, { ReactNode } from 'react';
 
-import React from 'react';
+interface ContainerProps {
+children: ReactNode;
+}
 
-const Container = ({children}) => {
+const Container = ({ children }: ContainerProps) => {
+    
     return (
         <Content>
             {children}
