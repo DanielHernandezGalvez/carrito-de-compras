@@ -1,9 +1,16 @@
 import styled from "styled-components";
 
-const Character = (props) => {
-  const { dataCharacter } = props;
-  const { character, image, quote } = dataCharacter;
+interface CharacterProps {
+dataCharacter: {
+character: string;
+image: string;
+quote: string;
+};
+}
 
+const Character = ({ dataCharacter }: CharacterProps) => {
+const { character, image, quote } = dataCharacter;
+  
   console.log(dataCharacter);
   return (
     <ContentCharacter>
