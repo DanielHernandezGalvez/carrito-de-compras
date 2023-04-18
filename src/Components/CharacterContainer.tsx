@@ -1,7 +1,16 @@
 import styled from "styled-components";
 import Character from "./Character";
-const CharacterContainer = (props) => {
-  const { characters, reqApi } = props;
+
+interface CharacterContainerProps {
+characters: {
+character: string;
+image: string;
+quote: string;
+}[];
+reqApi: () => void;
+}
+
+const CharacterContainer = ({ characters, reqApi }: CharacterContainerProps) => {
 
   return (
     <>
